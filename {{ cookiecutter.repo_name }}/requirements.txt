@@ -1,0 +1,4 @@
+pyprojroot
+typer
+tqdm
+# TODO: add external requirements

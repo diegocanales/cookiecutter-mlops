@@ -1,0 +1,10 @@
+{
+    "repo-name": "my-repo",
+    "project_name": "{{ cookiecutter.repo_name.replace('_', ' ').replace('-', ' ').title() }}",
+    "author_name": "Author Name",
+    "description": "A short description of the project.",
+    "package_name": "{{ cookiecutter.repo_name.lower().replace('-', '_') }}",
+    "conda_env": "{{ cookiecutter.package_name }}",
+    "docker_image": "{{ cookiecutter.package_name }}",
+    "ml_project": "no"
+}

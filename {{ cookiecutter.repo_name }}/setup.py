@@ -16,9 +16,7 @@ test_packages = [
 ]
 
 dev_packages = [
-    "pylama",
-    "isort",
-    "autopep8",
+    "ruff",
     "ipykernel",
     "ipywidgets>=7.0,<8.0",
     "python-dotenv"

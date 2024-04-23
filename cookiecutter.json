@@ -1,5 +1,5 @@
 {
-    "repo-name": "my-repo",
+    "repo_name": "my-repo",
     "project_name": "{{ cookiecutter.repo_name.replace('_', ' ').replace('-', ' ').title() }}",
     "author_name": "Author Name",
     "description": "A short description of the project.",

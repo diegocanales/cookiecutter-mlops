@@ -293,3 +293,7 @@ show-version: ## Show the current package version.
 .PHONY: link-template
 link-template: ## User cruft to link the cookiecutter to the project.
 	$(PACKAGE_MANAGER) run --no-capture-output -n base cruft link $(TEMPLATE_URL)
+
+.PHONY: init
+init: env vscode-settings ## Initialize the project.
+	@echo "Project initialized"

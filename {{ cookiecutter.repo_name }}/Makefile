@@ -9,13 +9,13 @@ CONDA_DIR = $(shell dirname $(shell dirname $(shell which conda)))
 define VSCODE_SETTINGS
 {\n
 \t"python.defaultInterpreterPath": "$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/python",\n
-\t"isort.interpreter": ["$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/python"],\n
-\t"isort.path": ["$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/isort"],\n
-\t"autopep8.interpreter": ["$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/python"],\n
-\t"autopep8.path": ["$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/autopep8"],\n
+\t"ruff.interpreter": ["$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/python"],\n
+\t"ruff.path": ["$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/ruff"],\n
+\t"ruff.lint.enable": true,\n
+\t"ruff.organizeImports": true,\n
 \t"autoDocstring.docstringFormat": "google",\n
 \t"[python]": {\n
-\t\t"editor.defaultFormatter": "ms-python.autopep8",\n
+\t\t"editor.defaultFormatter": "charliermarsh.ruff",\n
 \t},\n
 \t"editor.rulers": [80,120],\n
 \t"files.associations": {\n
@@ -23,6 +23,7 @@ define VSCODE_SETTINGS
 \t\t"dvc.lock": "yaml"\n
 \t},\n
 \t"dvc.pythonPath": "$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/python",\n
+\t"dvc.dvcPath": "$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/dvc",\n
 }\n
 endef
 
@@ -30,11 +31,9 @@ define VSCODE_EXTENSIONS_SETTINGS
 {\n
 "recommendations": [\n
 \t"ms-python.python",\n
+\t"charliermarsh.ruff",\n
 \t"ms-toolsai.jupyter",\n
-\t"ms-python.vscode-pylance",\n
 \t"njpwerner.autodocstring",\n
-\t"ms-python.isort",\n
-\t"ms-python.autopep8",\n
 \t"Iterative.dvc",\n
 \t"Gruntfuggly.todo-tree",\n
 ]\n

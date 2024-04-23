@@ -9,9 +9,9 @@ def check_regex(string, regex, error_msg):
         sys.exit(1)
 
 repo_name = '{{ cookiecutter.repo_name }}'
-REPO_NAME_REGEX = r'^[\-_a-zA-Z][\-_a-zA-Z0-9]+$'
+repo_name_REGEX = r'^[\-_a-zA-Z][\-_a-zA-Z0-9]+$'
 error_msg = f'ERROR: {repo_name} is not a valid repo_name!'
-check_regex(repo_name, REPO_NAME_REGEX, error_msg)
+check_regex(repo_name, repo_name_REGEX, error_msg)
 
 package_name = '{{ cookiecutter.package_name }}'
 PACKAGE_NAME_REGEX = r'^[\-_a-zA-Z][\-_a-zA-Z0-9]+$'

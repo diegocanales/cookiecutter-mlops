@@ -23,13 +23,13 @@ dev_packages = [
 ]
 
 docs_packages = [
-    "sphinx",
-    "sphinx-rtd-theme",
-    "rst-to-myst[sphinx]",
-    "myst-parser",
-    "sphinx-autobuild",
-    "nbsphinx",
-    "ipykernel"
+    "mkdocs",
+    "mkdocstrings[python]",
+    "mkdocs-material",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocs-section-index",
+    "mkdocs-jupyter"
 ]
 
 

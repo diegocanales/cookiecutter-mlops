@@ -1,0 +1,15 @@
+site_name: {{ cookiecutter.project_name }}
+theme:
+    name: "material"
+nav:
+    - Index: index.md
+    - Code Reference: reference/
+plugins:
+    - search
+    - gen-files:
+          scripts:
+              - docs/gen_ref_pages.py
+    - literate-nav:
+          nav_file: SUMMARY.md
+    - section-index
+    - mkdocstrings

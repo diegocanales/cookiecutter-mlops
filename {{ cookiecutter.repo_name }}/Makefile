@@ -266,6 +266,11 @@ update-major-version: ## Update major version, commit and tag the new version
 
 .PHONY: help
 help: ## List the command help.
+	@echo "Project variables:"
+	@echo "  PACKAGE_NAME: $(PACKAGE_NAME)"
+	@echo "  CONDA_ENV_NAME: $(CONDA_ENV_NAME)"
+	@echo "  DOCKER_IMAGE: $(DOCKER_IMAGE)"
+	@echo "Available commands:"
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/:.*##/ ->/'
 
 .PHONY: clean

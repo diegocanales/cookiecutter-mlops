@@ -8,7 +8,7 @@ CONDA_DIR = $(shell dirname $(shell dirname $(shell which conda)))
 
 define VSCODE_SETTINGS
 {\n
-\t"python.defaultInterpreterPath": "$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/python",\n
+\t"python.defaultInterpreterPath": "$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)",\n
 \t"ruff.interpreter": ["$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/python"],\n
 \t"ruff.path": ["$(CONDA_DIR)/envs/$(CONDA_ENV_NAME)/bin/ruff"],\n
 \t"ruff.lint.enable": true,\n

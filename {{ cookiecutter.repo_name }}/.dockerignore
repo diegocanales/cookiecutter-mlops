@@ -1,0 +1,11 @@
+data/
+docs/
+logs/
+models/
+notebooks/
+references/
+scripts/
+ci/
+mkdocs.yml
+.gitignore
+Dockerfile

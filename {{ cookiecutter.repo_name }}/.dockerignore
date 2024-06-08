@@ -8,4 +8,5 @@ scripts/
 ci/
 mkdocs.yml
 .gitignore
+.github/
 Dockerfile

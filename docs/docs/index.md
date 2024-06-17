@@ -1,6 +1,6 @@
-# Cookiecutter Data Science
+# Cookiecutter MLOps
 
-_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
+_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work with MLOps practices._
 
 ## Why use this project structure?
 

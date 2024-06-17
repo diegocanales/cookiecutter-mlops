@@ -1,7 +1,7 @@
 site_name: Cookiecutter MLOps
 site_description: A project template and directory structure for Python data science projects with MLOps practices.
 repo_url: https://github.com/diegocanales/cookiecutter-mlops
-edit_uri: edit/main/docs
+edit_uri: edit/main/docs/docs/
 copyright: Project maintained by Diego Canales.
 theme: cinder
 extra_css:

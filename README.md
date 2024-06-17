@@ -2,7 +2,7 @@
 
 A logical, reasonably standardized, but flexible project structure for doing and sharing data science projects with MLOps practices.
 
-## [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
+## [Project homepage](https://diegocanales.github.io/cookiecutter-mlops/)
 
 ### Requirements to use the cookiecutter template
 

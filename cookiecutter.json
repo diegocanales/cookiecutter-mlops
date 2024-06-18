@@ -6,5 +6,9 @@
     "package_name": "{{ cookiecutter.repo_name.lower().replace('-', '_') }}",
     "conda_env": "{{ cookiecutter.package_name }}",
     "docker_image": "{{ cookiecutter.package_name }}",
-    "ml_project": "no"
+    "ml_project": "no",
+    "_copy_without_render": [
+        "{{cookiecutter.repo_name}}/.github/workflows/docs.yaml",
+        ".github/workflows/docs.yaml"
+    ]
 }

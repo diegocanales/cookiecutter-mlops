@@ -68,7 +68,7 @@ endif
 .PHONY: env
 env: ## Create/update the environment.
 ifeq (base,$(CONDA_DEFAULT_ENV))
-	$(PACKAGE_MANAGER) env update -f environment.yaml --prune
+	$(PACKAGE_MANAGER) env update -f environment.yaml
 	@echo "!!!RUN THE conda activate COMMAND ABOVE RIGHT NOW!!!"
 else
 	@echo "Activate the base environment: conda activate base"

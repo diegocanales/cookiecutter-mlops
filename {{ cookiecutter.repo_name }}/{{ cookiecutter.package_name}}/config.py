@@ -1,14 +1,14 @@
-import logging
 from pathlib import Path
 
+import yaml
+from pydantic import BaseModel
 
-def get_logger(log_pth: Path = None):
-    handlers = [logging.StreamHandler()]
-    if log_pth is not None:
-        handlers.append(logging.FileHandler(log_pth))
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=handlers,
-        force=True)
-    return logging.getLogger()
+
+class Config(BaseModel):
+    pass
+
+
+def load_config(config_pth: Path) -> Config:
+    with open(config_pth, "r") as f:
+        config = yaml.safe_load(f)
+    return Config(**config)
